@@ -1,0 +1,163 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Include smooth scroll behavior */
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header Section */
+header {
+    background-color: #ffebcd;  /* Light beige */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff6347;  /* Tomato red */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Main Content Section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Flavors Section */
+.flavors h2 {
+    font-size: 2rem;
+    color: #ff6347;  /* Tomato red */
+    margin-bottom: 20px;
+}
+
+/* Flavor Card Styling */
+.flavor-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.flavor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.flavor-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.flavor-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #ffebcd;  /* Light beige */
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.2rem;  /* Slightly smaller header font */
+    }
+
+    .flavor-card {
+        width: 45%; /* Two cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;  /* Reduce header size */
+    }
+
+    header p {
+        font-size: 1rem;  /* Make the description smaller */
+    }
+
+    .flavor-card {
+        width: 48%;  /* Two cards per row on tablet */
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;  /* Reduce padding on smaller screens */
+    }
+
+    footer {
+        font-size: 0.9rem;  /* Smaller text in footer */
+        padding: 15px;  /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;  /* Further reduce header font on mobile */
+    }
+
+    .flavor-card {
+        width: 100%;  /* Full-width cards on mobile */
+        margin: 10px 0;  /* Adjust margin for mobile */
+    }
+
+    .flavor-card h3 {
+        font-size: 1.2rem;  /* Smaller title size */
+    }
+
+    .flavor-card p {
+        font-size: 0.9rem;  /* Smaller paragraph text */
+    }
+
+    footer {
+        font-size: 0.85rem;  /* Smaller footer text */
+        padding: 10px;  /* Reduce padding for mobile */
+    }
+}
+
+/* Accessibility Improvements */
+a:focus, button:focus {
+    outline: 3px solid #ff6347; /* Focus outline for better accessibility */
+}
+
+/* Add responsive font sizes for better scaling on mobile */
+html {
+    font-size: 100%; /* Base font size */
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 90%; /* Slightly smaller base font size for mobile */
+    }
+}
